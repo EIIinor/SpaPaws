@@ -1,7 +1,7 @@
 ﻿
 namespace SpaPaws.Models;
 
-internal class CustomerModel
+internal class Customer
 {
     public Guid Id { get; set; }
     public string FirstName { get; set; } = null!;
@@ -9,15 +9,11 @@ internal class CustomerModel
     public string PhoneNumber { get; set; } = null!;
     public string Email { get; set; } = null!;
 
-    public string DisplayName => $"{FirstName} {LastName}";
-
 
     public string StreetName { get; set; } = null!;
     public string City { get; set; } = null!;
     public string PostalCode { get; set; } = null!;
    
-
-    public string DisplayAddress => $"{StreetName} {City} {PostalCode} ";
 
     public int AnimalId { get; set; }
     public string AnimalName { get; set;} = null!;
